@@ -1,0 +1,139 @@
+body{
+	width:1250px;
+	height:670px;
+}
+
+
+.container1{
+	width:1250px;
+	height:100px;
+	background-image: url(../img/homework/h5upbg.jpg);
+	position:relative;
+	background-position:center;
+	margin-bottom: 0;
+	font-family: Century;
+}
+
+.container1 .content1{ 
+	justify-content: center;
+	align-items: center;
+	text-align:center;
+	color:white;
+	text-shadow:-2px -3px 4px black;
+}
+
+.container2{
+	width:234px;
+	height:450px;
+	font-size:14px;
+	float:left;
+	font-family: Century;
+}
+
+.container2 .form{
+	width:234px;
+	height:29px;
+	color:white;
+	border-radius:0 30px 30px 0;
+	background-color: green;
+	margin-top:8px;
+	padding-left: 5px;
+	padding-top: 5px;
+}
+
+.container2 .form:first-child{
+	margin-top:0;
+}
+
+.container2 .text{
+	background-color: green;
+	margin-top: 8px;
+	position: relative;
+}
+
+.container2 .text .input{
+	width:153px;
+	margin-left:5px;
+	margin-top: 7px;
+	float:left;
+}
+
+.container2 .text .button{
+	margin-top:7px;
+}
+.container2 .text .p{
+	padding-bottom: 4px;
+	text-align: center;
+	font-size:14px;
+}
+
+.container3{
+	position:absolute;
+	left: 250px;
+	top:125px;
+	font-family:Century;
+}
+.container3 h2{
+	margin-bottom:8px;
+	font-size:23px;
+}
+
+.container4{
+	position:absolute;
+	left:260px;
+	top:230px;
+	width:1000px;
+	height: 250px;
+	font-family:Century;
+	z-index: 1;
+}
+
+.container4 p{
+	text-transform: capitalize;
+}
+
+.container4 .icontext{
+	width:220px;
+	height:220px;
+	background-color: green;
+	display:inline-block;
+	border-radius: 30px 0 30px 0;
+	margin-right: 13px;
+	background-color:#fcc40d;
+	position:relative;
+}
+
+.container4 .icontext .icon{
+	width:80px;
+	height:80px;
+	justify-content: center;
+	border-radius: 50px;
+	background-image: url(../img/homework/h5icon.png);
+	background-position:center;
+	background-size: 100px 79px;
+	margin-left:60px;
+	margin-top: 10px;
+}
+.container4 p{
+	margin-left: 8px;
+	font-size:14px;
+	line-height: 20px;
+}
+.final{
+	margin-top:40px;
+	width:950px;
+	border-top:1px solid black;
+	text-align:justify;
+}
+.final p{
+	font-size:14px;
+	font-family: Century;
+}
+.grass{
+	background-image: url(../img/homework/h5bg.jpg);
+	width:1250px;
+	height:84px;
+	position: absolute;
+	bottom:0;
+	z-index: 0;
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Event Listener</title>
+</head>
+<body>
+	<div>
+	<div id="paragraph">
+		<p id="abc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+		<button id="hideme">Hide me</button>
+	</div>
+	<hr/>
+	<div>
+		<p id="greeting">I Love Myanmar</p>
+		<button id="red" name="red" class="">Red</button>
+		<button id="blue" name="blue" class="">Blue</button>
+		<button id="orange" name="orange" class="">Orange</button>
+		<button id="green" name="green" class="">Green</button>
+
+	</div>
+
+	<hr/>
+	<div>
+		<label>Gender</label>
+		<select name="gender" id="gender" class="" onchange="getgender()">
+			<option selected disabled>Choose Your Gender</option>
+			<option value="1">Male</option>
+			<option value="0">Female</option>
+		</select>
+		<br/>
+		<label>Country</label>
+		<select name="country" id="country" class="" onchange="getcountry()">
+			<option selected disabled>Choose Your Country</option>
+			<option value="mm">Myanmar</option>
+			<option value="thai">Thailand</option>
+		</select>
+		<br/>
+		<div id="mmcity">
+			<input type="radio" name="ygn" id="ygn" value="ygn"><label for="ygn">Yangon</label>
+			<input type="radio" name="bgo" id="bgo" value="bgo"><label for="bgo">Bago</label>
+			<input type="radio" name="mdy" id="mdy" value="mdy"><label for="mdy">Mandalay</label>
+		</div>
+		<div id="thaicity">
+			<input type="radio" name="bkk" id="bkk" value="bkk"><label for="bkk">Bangkok</label>
+			<input type="radio" name="phu" id="phu" value="phu"><label for="bgo">Phukhet</label>
+			<input type="radio" name="ms" id="ms" value="ms"><label for="mdy">Mae sout</label>
+		</div>
+	</div>
+	<hr/>
+
+	<form action="" method="">
+		<label for="name">Name</label>
+		<input type="text" name="name" id="name" class="" autocomplete="off" onchange="myfun()">
+
+		<br/>
+
+		<label for="address">Address</label>
+		<input type="text" id="address" class="" autocomplete="off">
+
+
+
+	</form>
+
+
+
+	</div>
+
+
+
+	<script type="text/javascript">
+
+		// function hideme(){
+		// 	console.log("hello");
+		// }
+
+		let btn=document.getElementById("hideme");
+		let pgh=document.getElementById("abc");
+
+		btn.addEventListener("click",()=>{
+			 // pgh.style.display = "none"; 
+			 // btn.innerText="show me";
+
+			if(pgh.style.display === "none"){
+				pgh.style.display = "block";
+				btn.innerText= "Hide Me";
+			}else{
+				pgh.style.display = "none";
+				btn.innerText = "Show Me";
+			}
+
+
+			// if(pgh.style.display==="block"){
+			// 	pgh.style.display = "none";
+			// 	btn.innerText ="Show Me";
+			// }else{
+			// 	pgh.style.display="block";
+			// 	btn.innerText="Hide Me";
+			// }
+		});
+
+			//.....
+
+			let grt =document.getElementById("greeting");
+
+		document.getElementById("red").addEventListener("click",()=>{
+			grt.style.color ="red";
+		})
+		document.getElementById("blue").addEventListener("click",()=>{
+			grt.style.color ="blue";
+		})
+		document.getElementById("orange").addEventListener("click",()=>{
+			grt.style.color ="orange";
+		})
+		document.getElementById("green").addEventListener("click",()=>{
+			grt.style.color ="green";
+		})
+
+
+		function getgender(){
+
+			let gnd = document.getElementById("gender");
+			switch(gnd.value){
+				case "0":
+				window.alert("Thanks Lady");
+				break;
+				case "1":
+				window.alert("Thanks Tar Gyi");
+				break;
+
+			}};
+
+			// for country
+
+			
+
+			document.getElementById("mmcity").style.display="none";
+			document.getElementById("thaicity").style.display="none";
+
+			function getcountry(){
+				let cty =document.getElementById("country");
+				// console.log(cty);
+
+			switch(cty.value){
+				case "mm":
+				// console.log("hello");
+
+				document.getElementById("mmcity").style.display="block";
+				document.getElementById("thaicity").style.display="none";
+				break;
+				case "thai":
+				// console.log("hay");
+				document.getElementById("thaicity").style.display="block";
+				document.getElementById("mmcity").style.display ="none";
+			}};
+
+			
+
+			function myfun(){
+
+				let txt = document.getElementById("name");
+				txt.value = txt.value.toUpperCase();
+			}
+
+
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Js storage</title>
+	</head>
+	<body>
+		
+
+		<script type="text/javascript">
+			
+			//local storage
+
+			localStorage.setItem('name',"maung maung");
+			localStorage.setItem('age',35);
+			localStorage.setItem('city',"Pyinmana");
+
+			// update
+			//Method 1
+			// localStorage.setItem('name','kyaw kyaw')
+			//Method 2
+			// localStorage.name="Mya Mya"
+
+			// getitem
+			const getname=localStorage.getItem('name');
+			const getage=localStorage.getItem('age');
+			const getcity=localStorage.getItem('city');
+			document.write(getname);
+			document.write("<br/>")
+			document.write(getage);
+			document.write("<br/>")
+			document.write(getcity);
+			document.write("<br/>")
+
+			//removeitem destroy single
+			localStorage.removeItem('name');
+			//remove all
+			localStorage.clear();
+
+			//session storage
+			//storage
+			sessionStorage.setItem('name','su su');
+			sessionStorage.setItem('age',20);
+			sessionStorage.setItem('city','Pyinmana');
+
+			//update
+			//Method1
+			sessionStorage.setItem('name','Mya Mya');
+			//method2
+			sessionStorage.name='Hla hla';
+
+			const takename= sessionStorage.getItem('name');
+			const takeage=sessionStorage.getItem('age');
+			const takecity=sessionStorage.getItem('city');
+			document.write(takename);
+			document.write("<br/>")
+			document.write(takeage);
+			document.write("<br/>")
+			document.write(takecity);
+			// document.write(typeof takename);
+
+			// sessionStorage.removeItem('name');
+			// sessionStorage.clear();
+
+
+
+
+
+
+
+
+
+
+		</script>
+	</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Document Object Model - Clock</title>
+</head>
+<body>
+
+
+<p id="display"></p>
+
+
+<script type="text/javascript">
+
+	function startclock(){
+	let getdisplay=document.getElementById('display');
+
+	let date= new Date();
+
+	let gethour=date.getHours();
+
+	let getminute=date.getMinutes();
+
+	let getsecond=date.getSeconds();
+
+	let getampm;
+
+	switch(gethour >12){
+		case true:
+		getampm = "PM";
+		gethour=gethour-12;
+		break;
+
+		case false:
+		getampm= "AM";
+		break;
+	}
+
+	getdisplay.innerText = gethour + " : " +getminute + " : " + getsecond + " " + getampm;
+}
+
+
+// setInterval
+
+startclock();
+
+setInterval(startclock,2000);
+
+</script>
+</body>
+</html>

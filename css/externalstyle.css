@@ -1,0 +1,24 @@
+/*selector*/
+/*element selector*/
+
+/*single selected*/
+p{
+	color:red;
+}
+/*group selector*/
+h1,h2,h3,h4{
+	color:blue;
+}
+
+/*id selector*/
+
+/*#myself{color:red;} #pfm{color:blue;}*/
+#myself,#pfm{
+	color:red;
+
+}
+.divone,.divtwo{
+	color:red;
+}
+
+/*div nae lok yin a kone pyit ml class ka unit pyit sa yr ma lo bu */

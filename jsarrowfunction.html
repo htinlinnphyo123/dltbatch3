@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Js arrow function</title>
+</head>
+<body>
+	
+
+
+
+	<script type="text/javascript">
+		
+		// Arrow Function(single parameter)
+
+
+	//Method 1
+		let arrfun1 = (num1)=>{
+			return num1;
+		}
+
+	console.log("hey i am num1 . my value is" + arrfun1(10));
+
+
+	//Method 2
+		let arrfun2 = num1=>{
+			return num1;
+		}
+	console.log("This is arrfun2 = " + arrfun2(20))
+
+	// Method 3
+		let arrfun3 = num1=> num1+100;
+	console.log(`this is arrfun3 = ${arrfun3(30)}`);
+
+			//arrow function(multiparameter)
+		let multiarrfun1 = (num1,num2)=>{
+			const result = num1 + num2;
+			return result;
+		}
+		console.log(`this is result = ${multiarrfun1(20,30)}`);
+
+			// without parameter(manual function)
+
+	//Method1
+		let wpfun1 = ()=>{
+			return "I Love Mandalay";
+		}
+		console.log(`this is wpfun1 = ${wpfun1()}` );
+
+	//Method2
+		let wpfun2 =()=>"I love myanmar";
+		console.log(wpfun2());
+
+
+
+
+
+	</script>
+</body>
+</html>

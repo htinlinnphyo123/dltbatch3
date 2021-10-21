@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Js block scope</title>
+</head>
+<body>
+
+
+	<script type="text/javascript">
+		
+
+		//global scope(Can call wherever)
+		var a=1;
+		let b=2;
+		const c=3;
+		console.log("Global Scope = " ,a,b,c);
+
+		//function scope
+		function test(){
+			// let x=100;
+			// console.log(x);
+
+			let a=4;
+			var b=5;
+			const c=6;
+			console.log("function scope = ",a,b,c);
+		}
+		test();
+
+		//console.log(x);//error
+		console.log(a,b,c);
+
+
+		//IF scope
+		// if(true){
+		// 	var a=7;
+		// 	let b=8;
+		// 	const c=9;
+		// 	console.log("IF scope = ",a,b,c);
+		// }
+
+		// console.log("global scope = ",a,b,c);
+
+		//loop scope
+		for(var a=0;a<10;a++){
+			console.log(`Loop : ${a}`);
+		}
+		console.log("global scope = ",a,b,c);
+		
+
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Stick&display=swap');
+
+*{
+	color:white;
+}
+div{
+	display: inline-block;
+}
+body{
+	background:url(../img/homework/h4.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+h2{
+	text-shadow: -5px -5px 2px black;
+}
+.container{
+	height:450px;
+	
+	position:relative;
+}
+form{
+	text-align: center;
+}
+.content{
+	border-style:dotted;
+	width: 300px;
+	height:250px;
+	background:rgba(123,100,127,0.3);
+	position:absolute;
+	left:450px;
+}
+
+.lgtext{
+	color:yellow;
+	font-family: 'Stick', sans-serif;
+}
+
+.login-head{
+	color:white;
+	text-shadow: -5px -4px 2px black;
+	margin:0;
+	font-size:16px;
+}
+.que{
+	text-shadow: -5px -5px 3px black;
+	font-size:14px;
+}
+.button{
+	color:black;
+}
+.p2{
+	font-size:12px;
+	letter-spacing: 1px;
+	line-height: 14px;
+	text-align:justify;
+
+}
+.register{
+	color:yellow;
+	font-size:13px;
+}
+
+

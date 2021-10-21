@@ -1,0 +1,82 @@
+<html>
+<head>
+	<title>Form Element</title>
+</head>
+<body>
+	<h1>Form Tag</h1>
+
+	<fieldset>
+		<legend>This is a simple form &para;</legend>
+	<form action="" method="" enctype="multipart/formdata">
+		<label for="firstname">First Name</label>
+		<input type="text" name="firstname" id="firstname" class="" placeholder="Enter your first name"/>
+
+		<br/>
+		<label for="lastname">Last Name</label>
+		<input type="text" name="lastname" id="lastname" class="" placeholder="Enter your last name"/>
+
+		<br/>
+		<label for="email">Email</label>
+		<input type="email" name="email" id="email" class="" placeholder="Enter your email" required>
+
+		<br/>
+		<label for="password">Password</label>
+		<input type="password" name="password" id="password" class="" placeholder="Enter your password">
+
+		<br/>
+		<label for="age">Age</label>
+		<input type="number" name="age" id="age" class="" placeholder="Enter your age">
+
+		<br/>
+		<label>Gender</label>
+		<input type="radio" name="gender" id="genderm" class="" value="1" checked/><label for="genderm">Male</label>
+		<input type="radio" name="gender" id="genderf" class="" value="2" /><label for="genderf">Female</label>
+
+		<br/>
+		<label>Salary</label>
+		<input type="radio" name="salary" id="salarym" class="" value="1"/><label for="salarym">SalaryM</label>
+		<input type="radio" name="salary" id="salarybanking" class="" value="0"><label for="salarybanking">Salary Banking</label>
+
+		<br/>
+		<label>Color</label>
+		<input type="checkbox" name="color" id="colorred" class="" value="colr"/><label for="colorred">Red</label>
+		<input type="checkbox" name="color" id="colorblk" class="" value="colblk"/><label for="colorblk">Black</label>
+		<input type="checkbox" name="color" id="colorblue" class="" value="colblu"/><label for colorblue>Blue</label>
+
+		<br/>
+		<label>Citizen</label>
+		<select name="country" id="country" class="" multiple>
+			<option selected disabled >Choose your country</option>
+			<option value='mm'>Myanmar</option>
+			<option value="lao">Laos</option>
+			<option value="indo">Indonesia</option>
+			<option value="Thai">Thailand</option>
+			<option value="US">United States</option>
+		</select>
+	
+	<input type="hidden" name="test" id="test" class="" />
+	<br/>
+	<label for="date">Date</label>
+	<input type="date" name="date" id="date" class=""/>
+	<br/>
+	<label for="time">Time</label>
+	<input type="time" name="time" id="time" class=""/>
+	<br/>
+	<label for="datetime">DateTime</label>
+	<input type="datetime-local" name="datetime" id="datetime" class=""/>
+	<br/>
+	<label for="nrcfront">Nrc Front</label>
+	<input type="file" name="nrcfront" id="nrcfront" class="" multiple />
+	<br/>
+	<label for="range">Age</label>
+	<input type="range" name="range" id="range" class="" min="0" mix="100" value="40" />
+	<br/>
+	<label for="bio">Bio</label><br/>
+			<textarea rows="2"></textarea><br/>
+	<input type="reset" name="reset" id="reset" class="" value="Cancel" />
+	<input type="submit" name="submit" id="submit" class="" value="Register" />
+	<button type="submit" name="submit" id="btn" class="" value="Register">Register</button>
+	</form>
+	</fieldset>
+</body>
+</html>

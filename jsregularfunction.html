@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Regular Function</title>
+</head>
+<body>
+
+
+	<script type="text/javascript">
+
+
+		//type of function
+		//1 Regular function
+		//2 arrow function
+
+		//Regular function
+		//1Manual function
+		//parameter(single,multi)
+
+		function greet(){
+			console.log("Hello Mandalay");
+		}
+		greet();
+
+		function printalert(){
+			window.alert("Hello Myanmar");
+		}
+		// printalert();
+		// printalert();
+
+		// js hmr recall invoke loke tr up hmr lae lok loe ya
+
+		// function hello(){
+		// 	return "Hello Yangon";
+		// }
+		// console.log(hello());
+		// window.alert(hello());
+		// document.write(hello());
+
+
+			//single parameter
+		function myfun1(city){
+			console.log("Hello"+ city);
+		}
+		myfun1();//undefinied
+		myfun1("Yangon");
+		myfun1("Mandalay");
+
+		function myfun2(city="Myanmar"){
+			console.log(`Hello ${city}`);
+		}
+		myfun2("Naypyitaw");
+
+			//multi parameter
+
+		function multifun1(x,y,z){
+			console.log(`X value is ${x} and Y value is ${y} and Z value is ${z}`);
+		}
+		multifun1(10,20,30)
+
+
+
+		function multifun2(x,y,z){
+			const result =x+y+z;
+			return result;
+		}
+		console.log(multifun2(10,20,30));
+
+
+
+
+		function multifun3(x,y,z){
+			const result =x+y+z;
+			return result;
+		}
+		console.log(multifun3(10,20));
+
+
+		let num1=0;
+		let num2=1;
+		let num3=2;
+		function multifun4(a,b,c){
+			console.log(`A value is ${a} , B value is ${b} , C value is ${c}`);
+		}
+
+		multifun4(num1,num2,num3);
+
+
+		//3Name less function
+
+		let annfun = function (a){
+			console.log(`My value is + ${a}`);
+		}
+
+		annfun(100);
+
+		//4 constructor function
+
+		let confun=new Function("j","k","return j+k");
+
+		console.log(confun(10,20));
+
+
+		//5 self invoking function
+		//immediately invokable function expression(IIFE)
+
+		// --method 1
+		let iife= function(a){
+			console.log(`i am invokable function , my value is ${a}`);
+		}(100);
+
+		// --method2
+
+		(function(a){
+			console.log(`i am invokable function method 2, my value is ${a}`)
+		})(100);
+
+
+
+		// Get function Name
+
+		// function funone(){
+		// 	console.log("hello world");
+		// }
+		// function funtwo(fun){
+		// 	return fun;
+		// }
+		// funtwo(funone());
+
+		// function funone(){
+		// 	return "hello world";			
+		// }
+		// function funtwo(fun){
+		// 	console.log(`${fun}`)
+		// };
+		// funtwo(funone());
+
+
+//function call
+		let myarrs=[];
+
+		function funone(){
+			console.log(`Hey i am funone ${Math.floor(Math.random()*100)}`);
+		};
+
+		myarrs.push(funone);
+		myarrs.push(funone);
+		myarrs.push(funone);
+		console.log(myarrs);
+
+		function funtwo(){
+			myarrs.forEach(function(myarr){
+				funone.call();
+			})
+		}
+		funtwo();
+		console.log(funtwo);
+
+
+		const name=["john","doe","simon","John","java","jack","tesn","Simon"];
+
+    function removeDuplicate(arr){
+    let newArray=[];
+    for(let i=0;i<arr.length;i++){
+        if(!newArray.includes(arr[i].toLowerCase())){
+        newArray.push(arr[i].toLowerCase());
+}
+        return newArray;
+    }
+
+    console.log(removeDuplicate(name));
+
+
+</script>
+</body>
+</html>																				

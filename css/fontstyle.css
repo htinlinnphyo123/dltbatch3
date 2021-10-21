@@ -1,0 +1,71 @@
+/*body{*/
+	/*font-family:Arial;*/
+	/*font-family:Century;*/
+	/*font-family:"Times New Roman";*/
+/*}*/
+/*.p2{*/
+	/*font-family:Arial,Century,"Times New Roman";*/
+/*}*/
+
+@font-face{
+	font-family:Stick;
+	src:local(Stick-Regular),url(../lib/stick/Stick-Regular.tff) format('woff') ;
+}
+@font-face{
+	font-family: "Akaya-Telivigala";
+	src:local("AkayaTelivigala-Regular"),url(../lib/akaya/AkayaTelivigala-Regular.tff) format('woff');
+
+}
+.p2{
+	font-family: 'Stick';
+	font-weight:bold;
+	font-style:italic;
+	text-indent:50px;
+	text-transform: uppercase;
+}
+.p1{
+	font-family: "Akaya-Telivigala";
+	text-transform:uppercase;
+}
+
+.a1{
+	text-decoration: none;
+}
+.a1:visited{
+	color:red;
+}
+.a1:hover{
+	color:blue;
+	font-size: 10px;
+}
+.menutext{
+	color:red;
+	padding:20px;
+	border-radius:10px;
+	text-decoration: none;
+	background-color: gold;
+}
+.menutext:hover{
+	font-family: Arial,Century;
+	text-decoration: none;
+	background-color: green;
+	color:white;
+	padding:20px;
+	border-radius:20px;
+	transition:1s;
+	/*padding-bottom padding-right padding-top padding-left*/
+}
+.menutext:active{
+	color:blue;
+}
+.imgdesign{
+	width:80px;
+	height:80px;
+	cursor:pointer;
+}
+.imgdesign:hover{
+	width:100px;
+	height:100px;
+
+	transition:1s;
+}

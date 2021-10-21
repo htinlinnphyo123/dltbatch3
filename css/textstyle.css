@@ -1,0 +1,21 @@
+.textalign{
+	/*text-align: left;*/
+	/*text-align: right;*/
+	/*text-align:center;*/
+	text-align:justify;
+}
+
+.textdecoration{
+	/*text-decoration: underline;*/
+	/*text-decoration: line-through;*/
+	text-decoration:overline;
+}
+.textline{
+	letter-spacing: 5px;
+	/*line-height:3px;*/
+	line-height:3;
+}
+.textshadow{
+	/*horizontal vertical blur color*/
+	text-shadow: -4px -4px 2px red;
+}n

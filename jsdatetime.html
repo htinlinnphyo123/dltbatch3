@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS datetime</title>
+</head>
+<body>
+
+
+	<small>copyright <span id="year"></span> by ....</small>
+
+
+	
+
+
+
+
+	<script type="text/javascript">
+		
+
+		//datetime
+		let date=new Date();
+		// console.log(date);
+		// console.log(typeof date);
+
+		let hour=date.getHours();
+		console.log(hour);
+
+		let minute=date.getMinutes();
+		console.log(minute);
+
+		let seconds=date.getSeconds();
+		console.log(seconds);
+
+			// milliseconds
+		let gettime=date.getTime();
+		console.log(gettime);
+		let now=Date.now();
+		console.log(now);
+		document.write(now)
+
+		let getdate=date.getDate();
+		console.log(getdate);
+
+		let getmonth=date.getMonth();
+		console.log(getmonth);
+
+		let day=date.getDay();
+		console.log(day);
+
+		let year=date.getFullYear();
+		document.getElementById("year").innerText=year;
+
+		let utcyear=date.getUTCFullYear();
+		console.log(utcyear);
+
+		let bd=new Date('8-10-2013');
+		bd=new Date('8/10/2013 11:25:00');
+		bd=new Date('Aug 10 2013');
+		bd=new Date('Aug 10 2013 11:35:10');
+
+		bd.setMonth(2);
+		bd.setDate(15);
+		bd.setFullYear(20289);
+		bd.setHours(2);
+		bd.setMinutes(10);
+		bd.setSeconds(13);
+
+		console.log(bd)
+
+	</script>
+</body>
+</html>

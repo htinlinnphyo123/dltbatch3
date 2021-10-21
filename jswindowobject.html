@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS WINDOW OBJECT</title>
+</head>	
+<body>
+	
+	<div style="margin-top:0px"></div>
+<script type="text/javascript">
+	
+
+	//alert
+	// window.alert("what is your name?");
+
+	//prompt
+	// prompt("what is your name");
+
+	//confirm
+	// if(confirm("Are you sure")){
+	// 	console.log("yes i want to delete");
+	// }else{
+	// 	console.log('no i don\'t')
+	// }
+
+	let val;
+
+	// outerwidth
+	val=window.outerWidth;
+	console.log( "this is outer width = " + val);
+
+	//outerheight
+	val=window.outerHeight;
+	console.log("this is outer height = " + val);
+
+	//innerwidth
+	val=window.innerWidth;
+	console.log("this is inner width = " + val);
+
+	//innerheight
+	val=window.innerHeight;
+	console.log("this is inner height = " +val);
+
+	//scroll point
+	val=window.scrollY;
+	console.log("scrollY value is "+ val);
+
+	//location object
+	val=window.location;
+	console.log(val);
+	val=window.location.hostname;
+	console.log(val);
+	val=window.location.port;
+	console.log(val);
+	val=window.location.href;
+	console.log(val);
+	val=window.location.search;
+	console.log(val);
+
+	//redirect
+	// window.location.href="https://google.com";
+
+	//redirect
+	// window.location.reload();
+
+	document.write( "appName = " + window.navigator.appName + "<br/>"); 
+	document.write(" appVersion = " + window.navigator.appVersion + "<br/>");
+	document.write("userAgent = " + window.navigator.userAgent + "<br/>")
+	document.write("platform = " + window.navigator.platform + "<br/>")
+	document.write("javaEnabled = " + window.navigator.javaEnabled() + "<br/>")
+
+	document.write("language = " + window.navigator.language + "<br/>")
+	document.write("onLine = " + window.navigator.onLine + "<br/>")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>	
+</body>
+</html>

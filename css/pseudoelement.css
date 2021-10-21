@@ -1,0 +1,16 @@
+.paragraph1::first-line{
+	color:red;
+}
+.paragraph1::first-letter{
+	font-size:30px;
+}
+.paragraph1::before{
+	content:"XYZ"
+}
+.paragraph1::after{
+	content: "ABC";
+}
+.paragraph1::selection{
+	background-color: orange;
+	color:white;
+}

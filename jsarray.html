@@ -1,0 +1,141 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>array</title>
+</head>
+<body>
+	
+
+
+	<script type="text/javascript" >
+		
+		let j=new Array("aung aung","kyaw kyaw","maung maung");
+		console.log(j);
+		console.log(j.length);
+
+		let x=["aung aung","kyaw kyaw","maung maung"];
+		console.log(j);
+		console.log(j.length);
+
+		let y=[20,"ag ag",true,undefined,null,new Date(),{a:1,b:2}];
+		console.log(y.length);
+		console.log(y);
+
+		l=[1200,1300,1400,1500];
+		console.log(l[0]);
+
+		const n="aung aung";
+		console.log(n);
+		console.log(n.length);
+		console.log(n.indexOf("a"));
+
+		let m=[];
+		m[0]="green";
+		m[1]="red";
+		m[2]="black";
+		console.log(m[2]);
+
+		m[3]="blue";
+		console.log(m);
+
+		//it is array or not
+		console.log(Array.isArray(m));
+
+		//array to string
+		console.log(m.toString());
+
+		// array special character
+		console.log(m.join("-"))
+
+		// push new value to array
+		m.push("gold");
+		m.push("grey");
+		m.push("buel","hey");
+
+		// delete last value
+		m.pop();
+		console.log(m);
+
+		//delete frontest value
+		m.shift();
+		console.log(m);
+
+		delete m[2];
+		console.log(m);
+
+		// push new value to frontest
+		m.unshift("violet");
+		console.log(m);
+
+						//index , length
+		let q = m.splice(1,3);
+		console.log(q);
+		document.write(q);
+
+		//array combine
+		const arr1=["maung maung","aung aung","kyaw kyaw"];
+		const arr2=["su su","nu nu"];
+		const arr3=[200,300];
+
+		console.log(arr1.concat(arr2));
+		console.log(arr1.concat(arr3));
+
+		//just for string
+		const arr4=arr1.concat(arr2);
+		console.log(arr4.sort()); //small to large
+		console.log(arr4.reverse());
+
+		//for number
+		const arr5=[10,20,300,50,200,80,700];
+		console.log(arr5.sort(function(a,b){
+			return a-b
+		}));
+
+		//filter
+
+		const ages =[10,20,30,40,50,5];
+		let result = ages.filter(function(age){
+			return age >= 18;
+		})
+		console.log(ages);
+		console.log(result);
+
+		//...
+		let arrfuns=[];
+
+		funone=function(){
+			console.log("i am funone");
+		};
+		funtwo=function(){
+			console.log("i am funtwo");
+		};
+		funthree=function(){
+			console.log("i am fanthree");
+		};
+
+		arrfuns.push(funone);
+
+		arrfuns.push(funtwo);
+
+		arrfuns.push(funthree);
+
+		let output = arrfuns.filter(function(arrfun){
+			if(arrfun===funtwo){
+				return funtwo;
+			}
+		});
+		console.log(output);
+		document.write(output);
+		console.log(arrfuns);
+		document.write(arrfuns);
+
+
+
+
+
+
+
+
+	</script>
+</body>
+</html>

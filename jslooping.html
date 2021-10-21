@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Looping</title>
+</head>
+<body>
+	
+
+	<script type="text/javascript">
+		
+		// for loop
+
+		// let i=0;
+
+		// for(i ; i<10 ; i++){
+		// 	console.log("Number is " + i);
+		// }
+
+		// console.log("i value is " + i);
+
+
+		// for(i ; i<=10 ; i++){
+		// 	console.log("Number is " + i);
+		// }
+
+		// console.log("i value is " + i);
+
+		// let y=0;
+
+		// for(y ; y<10 ; y++){
+
+		// 	if(y===2){
+		// 		console.log("2 is my fav number");
+		// 	}
+		// 	console.log("Y value is" + y);
+
+		// 	if(y===3){
+		// 		console.log("3 is 3");
+		// 	}
+		// }
+		// console.log("Y =" + y);
+
+
+		// for(y ; y<10 ; y++){
+
+		// 	if(y===2){
+		// 		console.log("2 is my fav number");
+		// 		break;
+		// 	}
+		// 	console.log("Y value is" + y);
+		// }
+		// console.log("Y =" + y);
+
+		// let k=10;
+
+		// for(k;k>=0;k--){
+		// 	console.log("k value is" + k);
+		// }
+		// 	console.log("k = " + k);
+
+		// for loop with array
+		let myarr=["red","white","black","green","yellow","grey"];
+
+		for(let m=0; m<myarr.length;m++){
+			document.write(myarr[m] + " color" + "<br/>");
+		}
+
+		// for loop with array object
+		let peoples=[
+			{name:"aung aung",age:20},
+			{name:"su su",age:21},
+			{name:"mya mya",age:22}
+		];
+		for(let j=0;j<peoples.length;j++){
+			document.write(peoples[j].name + "<br/>")
+		}
+
+
+		// for in loop
+
+		let student={
+			name:"aung aung",
+			age:38,
+			parent:"U Ba"
+		}
+		for(key in student){
+			document.write(key + " is " + student[key] + "<br/>" )
+		}
+
+		for(key in myarr){
+			document.write(key + " is " + myarr[key] + "<br/>")
+		}
+
+
+		document.write("<hr/>");
+
+
+		//while loop
+
+		let c=0;
+
+		while(c<10){
+			c++;
+			console.log("c is " + c);
+		}
+		console.log(" c = " + c);
+
+		let l=0;
+
+		while(l<myarr.length){
+			document.write("color is " + myarr[l] + "<br/>");
+			l++;
+		}
+
+		// do while loop
+
+		let n=0;
+
+		do{
+
+			console.log("My number is " + n);
+			n++;
+		}while(n<10);
+
+		document.write("<hr/>");
+
+		let p=0;
+
+		do{
+			document.write("My color is " + p + "<br/>");
+			p++;
+		}while(p<10)
+
+
+		//foreach loop
+		let myarrs=["red","blue","green","grey","white"];
+
+		myarrs.forEach(function(myarr){
+			document.write(myarr + "<br/>")
+		})
+
+		document.write("<hr/>");
+
+		myarrs.forEach(function(myarr,index){
+			document.write("index number is" + index+ "value is " + myarr  + "<br/>")
+		});
+
+
+		//map
+
+		let users=[
+		{id:1,name:"Ag Ag"},
+		{id:2,name:"Kyaw Kyaw"},
+		{id:3,name:"Zaw Zaw"}
+		]
+
+		console.log(users);
+
+		const ids=users.map(function(user){
+			return user.id;
+		})
+
+		console.log(ids);
+
+		const name=users.map(function(user){
+			return user.name;
+		})
+
+		console.log(name);
+
+
+		
+	</script>
+</body>
+</html>

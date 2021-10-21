@@ -1,0 +1,53 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>string method</title>
+</head>
+<body>
+	
+
+	<script type="text/javascript">
+			
+
+			//string combine
+		let val="maung maung";
+		let lv="Kyaw";
+
+		console.log(val);
+		console.log(lv);
+
+		let nm=val+lv;
+		val += lv;
+		console.log(val);
+		console.log(nm);
+
+		// concat
+		var firstname="Zayar";
+		var lastname="Kyaw";
+		var fullname= firstname.concat(lastname);
+		console.log(fullname);
+
+		//string is character array in js
+		console.log(fullname[3]);
+
+		//charAt
+		console.log(firstname.charAt(2));
+		console.log(firstname.charAt(firstname.length-1));
+
+		//include replace
+		let fav="my fav color is black";
+
+		console.log(fav.includes("Black"));
+
+		console.log(fav.replace("black","red"));
+
+							//index , length
+		console.log(fav.substring(0,5) + "...");
+
+		console.log(fav.toUpperCase());
+		console.log(fav.toLoweCase());
+
+
+	</script>
+</body>
+</html>

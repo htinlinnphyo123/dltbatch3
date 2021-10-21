@@ -1,0 +1,62 @@
+:root{
+	--oc:green;
+}
+
+.div1{
+	width:100px;
+	height:80px;
+	background-color: var(--oc);
+	transform:rotate(39deg);
+	/*vender prefix properties*/
+	-webkit-transform:rotate(39deg); /*chrome safri opera -o- , -ms- internet exploer , -moz- firefox*/
+
+}
+.div2{
+	width:100px;
+	height:80px;
+	background-color: var(--oc);
+	transform:rotateY(30deg);
+}
+.div4{
+	width:100px;
+	height:80px;
+	background-color: var(--oc);
+	transform:translate(100px);
+}
+.country{
+	font-size: 16px;
+
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	appearance:none;
+
+	padding:10px 25px 10px 10px;
+	background-image: url(https://www.pngkey.com/png/detail/124-1245598_red-down-arrow-png.png);
+	background-size: 15px;
+	background-position: right;
+	background-repeat: no-repeat;
+	background-position-x :90%;  
+}
+
+/*outline lay ka paw lr tr*/
+.country:focus{
+	outline:0;
+}
+h1{
+	text-align: center;
+}
+
+p.text{
+	text-align:center;
+}
+
+@media(max-width:600px){
+
+	h1{
+		font-size:15px;
+	}
+
+	p.text{
+		color:blue;
+	}
+}

@@ -1,0 +1,93 @@
+/*Tag to tags*/
+div span p{
+	color:red;
+}
+
+
+/*multiple tag to class*/
+div span small .mn{
+	color:blue;
+}
+div span small i.mn{
+	color:blue;
+}
+/*above two are the same*/
+
+
+/*tag to class*/
+div p.worldcup{
+	color:red;
+}
+
+
+
+/*tag to multiple class*/
+div .name .age{
+	color:orange;
+}
+
+
+/*class to class*/
+.bank .money .currency{
+	color:violet;
+}
+/*.bank{
+	color:purple;
+}*/
+
+
+/*class to tag*/
+.container p{
+	color:red;
+}
+
+/*class to tags*/
+.container span p{
+	color:blue;
+}
+
+
+/*same class*/
+.model.us{
+	color:green;
+}
+.model.jpn{
+	color:blue;
+}
+.model.chn{
+	color:red;
+}
+
+/*class to same class*/
+.vehicle .car.jpn{
+	color:blue;
+}
+.vehicle .car.cn{
+	color:red;
+}
+.vehicle .car.indo{
+	color:green;
+}
+/*class to tag by group selector*/
+.div1 b, .div1 p{
+	color:red;
+}
+/*child selector*/
+.div2 > p{
+	color:red;
+}
+
+/*sibling selector*/
+/*1.general sibling*/
+/*2.adjacent sibling */
+
+
+/*general sibling*/
+.div4 ~ p{
+	color:red;
+}
+
+/*adjacent sibling selector*/
+.div7 + p{
+	color:blue;
+}
